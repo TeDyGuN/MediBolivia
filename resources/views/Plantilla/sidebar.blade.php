@@ -79,7 +79,7 @@
                 </ul>
             </li>
             <li>
-                <a href="#"><i class="fa fa-lg fa-fw fa-fax"></i> <span class="menu-item-parent">2018</span></a>
+                <a href="#"><i class="fa fa-lg fa-fw fa-fax"></i> <span class="menu-item-parent">Entre Rios 2018</span></a>
                 <ul>
                     <li>
                         <a href="{{ url('/transporte/2018') }}">
@@ -88,13 +88,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/impuesto/2018') }}">
                           <i class="fa fa-lg fa-fw fa-dollar"></i>
                           Impuestos
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/sobrepeso/2018') }}">
                           <i class="fa fa-lg fa-fw fa-arrow-circle-up"></i>
                           Sobrepeso
                         </a>
@@ -106,7 +106,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/varios/2018') }}">
                           <i class="fa fa-lg fa-fw fa-life-ring"></i>
                           Varios
                         </a>

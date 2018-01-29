@@ -4,7 +4,7 @@
     <div id="ribbon">
         <ol class="breadcrumb">
             <li><a href="{{ url("home")}}">Inicio</a></li>
-            <li>Transporte</li>
+            <li>Sobepreso</li>
         </ol>
     </div>
     <!-- Small boxes (Stat box) -->
@@ -12,7 +12,7 @@
         <div class="row" >
           <div class="col-md-12">
               <div class="panel panel-default" id="panel-profin">
-                  <div class="panel-heading text-center textoHeader">Registro Transporte</div>
+                  <div class="panel-heading text-center textoHeader">Registro Sobepreso</div>
                   <div class="panel-body">
                         @if (count($errors) > 0)
                             <div class="alert alert-danger">
@@ -24,11 +24,11 @@
                                 </ul>
                             </div>
                         @endif
-                            <form class="form-horizontal" role="form" method="POST" action="{{ url('/transporte/save') }}">
+                            <form class="form-horizontal" role="form" method="POST" action="{{ url('/sobrepeso/save') }}">
                                 {{ csrf_field() }}
                                 <input type="text" name="_year" hidden value="{{ $year }}">
                                 <div class="form-group">
-                                    <label for="tipo" class="col-md-4 control-label">Transporte: </label>
+                                    <label for="tipo" class="col-md-4 control-label">Impuesto: </label>
                                     <div class="col-md-6">
                                       <select class="form-control" name="tipo">
                                           <option value="Nacional">Nacional</option>
@@ -49,32 +49,7 @@
                                         @endif
                                     </div>
                                 </div>
-                                <div class="form-group {{ $errors->has('salida') ? ' has-error' : '' }}">
-                                    <label for="salida" class="col-md-4 control-label">Salida: </label>
 
-                                    <div class="col-md-6">
-                                        <input id="salida" type="text" class="form-control" name="salida" value="{{ old('salida') }}" required>
-
-                                        @if ($errors->has('salida'))
-                                            <span class="help-block">
-                                                <strong>{{ $errors->first('salida') }}</strong>
-                                            </span>
-                                        @endif
-                                    </div>
-                                </div>
-                                <div class="form-group {{ $errors->has('llegada') ? ' has-error' : '' }}">
-                                    <label for="llegada" class="col-md-4 control-label">Llegada: </label>
-
-                                    <div class="col-md-6">
-                                        <input id="llegada" type="text" class="form-control" name="llegada" value="{{ old('llegada') }}" required>
-
-                                        @if ($errors->has('llegada'))
-                                            <span class="help-block">
-                                                <strong>{{ $errors->first('llegada') }}</strong>
-                                            </span>
-                                        @endif
-                                    </div>
-                                </div>
                                 <div class="form-group {{ $errors->has('numero') ? ' has-error' : '' }}">
                                     <label for="numero" class="col-md-4 control-label">Cantidad: </label>
 
@@ -112,7 +87,7 @@
                         {{$success = Session::get('success')}}
                         @if ($success)
                             <div class="alert alert-success">
-                                <strong>!!Felicidades!!</strong>Se Creo el Transporte Correctamente <br><br>
+                                <strong>!!Felicidades!!</strong>Se Creo el Sobepreso Correctamente <br><br>
                             </div>
                         @endif
                     </div>
@@ -124,7 +99,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="panel panel-default" id="panel-profin">
-                <div class="panel-heading text-center textoHeader">Detalle Transporte</div>
+                <div class="panel-heading text-center textoHeader">Detalle Sobepreso</div>
                 <div class="panel-body">
                   <form style="padding: 10px;">
                     <div class="radio-inline">
@@ -151,8 +126,6 @@
                         <tr style="font-size: 14px;" class="info">
                           <th>Tipo</th>
                           <th>Nombre</th>
-                          <th>Salida</th>
-                          <th>Llegada</th>
                           <th>Cantidad</th>
                           <th>Precio</th>
                           <th>Total</th>
@@ -164,8 +137,6 @@
                          <tr>
                              <th>{{ $t->tipo}}</th>
                              <th>{{ $t->nombre }}</th>
-                             <th>{{ $t->salida }}</th>
-                             <th>{{ $t->llegada }}</th>
                              <th>{{ $t->numero }}</th>
                              <th>{{ number_format($t->costo, 2) }}</th>
                              <th>{{ number_format($t->total, 2) }}</th>
@@ -173,8 +144,6 @@
                          </tr>
                        @endforeach
                        <tr>
-                         <th></th>
-                         <th></th>
                          <th></th>
                          <th></th>
                          <th></th>
@@ -201,8 +170,6 @@
 
             $('#datos > tbody:last-child').append('<tr><th>' + '{{ $t->tipo }}' + '</th>' +
                                                       '<th>' + '{{ $t->nombre }}' + '</th>' +
-                                                      '<th>' + '{{ $t->salida }}' + '</th>' +
-                                                      '<th>' + '{{ $t->llegada }}' + '</th>' +
                                                       '<th>' + '{{ $t->numero }}' + '</th>' +
                                                       '<th>' + '{{ number_format($t->costo, 2) }}' + '</th>' +
                                                       '<th>' + '{{ number_format($t->total, 2) }}' + '</th></tr>');
@@ -210,8 +177,6 @@
 
           @endforeach
           $('#datos > tbody:last-child').append('<tr><th>' + '' + '</th>' +
-                                                    '<th>' + '' + '</th>' +
-                                                    '<th>' + '' + '</th>' +
                                                     '<th>' + '' + '</th>' +
                                                     '<th>' + '' + '</th>' +
                                                     '<th>' + 'Total: ' + '</th>' +
@@ -224,9 +189,7 @@
             @if($t->tipo == 'Nacional'){
 
             $('#datos > tbody:last-child').append('<tr><th>' + '{{ $t->tipo }}' + '</th>' +
-                                                      '<th>' + '{{ $t->nombre }}' + '</th>' +
-                                                      '<th>' + '{{ $t->salida }}' + '</th>' +
-                                                      '<th>' + '{{ $t->llegada }}' + '</th>' +
+                                                      '<th>' + '{{ $t->nombre }}' + '</th>'+
                                                       '<th>' + '{{ $t->numero }}' + '</th>' +
                                                       '<th>' + '{{ number_format($t->costo, 2) }}' + '</th>' +
                                                       '<th>' + '{{ number_format($t->total, 2) }}' + '</th></tr>');
@@ -235,8 +198,6 @@
             @endif
           @endforeach
           $('#datos > tbody:last-child').append('<tr><th>' + '' + '</th>' +
-                                                    '<th>' + '' + '</th>' +
-                                                    '<th>' + '' + '</th>' +
                                                     '<th>' + '' + '</th>' +
                                                     '<th>' + '' + '</th>' +
                                                     '<th>' + 'Total: ' + '</th>' +
@@ -250,8 +211,6 @@
 
             $('#datos > tbody:last-child').append('<tr><th>' + '{{ $t->tipo }}' + '</th>' +
                                                       '<th>' + '{{ $t->nombre }}' + '</th>' +
-                                                      '<th>' + '{{ $t->salida }}' + '</th>' +
-                                                      '<th>' + '{{ $t->llegada }}' + '</th>' +
                                                       '<th>' + '{{ $t->numero }}' + '</th>' +
                                                       '<th>' + '{{ number_format($t->costo, 2) }}' + '</th>' +
                                                       '<th>' + '{{ number_format($t->total, 2) }}' + '</th></tr>');
@@ -260,8 +219,6 @@
             @endif
           @endforeach
           $('#datos > tbody:last-child').append('<tr><th>' + '' + '</th>' +
-                                                    '<th>' + '' + '</th>' +
-                                                    '<th>' + '' + '</th>' +
                                                     '<th>' + '' + '</th>' +
                                                     '<th>' + '' + '</th>' +
                                                     '<th>' + 'Total: ' + '</th>' +
