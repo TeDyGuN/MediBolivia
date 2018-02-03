@@ -34,3 +34,9 @@ Route::post('/sobrepeso/save', 'Sistema\SobrepesoController@saveSobrepeso');
 //Impuyestos
 Route::get('/varios/{year}', 'Sistema\VariosController@getVarios');
 Route::post('/varios/save', 'Sistema\VariosController@saveVarios');
+//Hotel
+Route::get('/hotel/{year}/{number}', 'Sistema\HotelController@getHotel');
+Route::post('/hotel/save', 'Sistema\HotelController@saveHotel');
+//total
+Route::get('/total/{year}', 'Sistema\VariosController@getTotal');
+Route::get('/reporte/{year}', 'Sistema\VariosController@getReporte');

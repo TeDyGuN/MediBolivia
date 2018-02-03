@@ -12,7 +12,7 @@
         <div class="row" >
           <div class="col-md-12">
               <div class="panel panel-default" id="panel-profin">
-                  <div class="panel-heading text-center textoHeader">Registro Impuestos</div>
+                  <div class="panel-heading text-center textoHeader">Registro Impuestos {{ $year }}</div>
                   <div class="panel-body">
                         @if (count($errors) > 0)
                             <div class="alert alert-danger">

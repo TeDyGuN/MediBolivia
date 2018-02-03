@@ -8,3 +8,10 @@
 #panel-profin{
   margin-top: 15px !important;
 }
+@media print{
+  @page {size:portrait;}
+  #datos{
+      margin-top: 500px;
+  }
+
+}

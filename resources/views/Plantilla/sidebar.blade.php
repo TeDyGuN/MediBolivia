@@ -46,31 +46,57 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/impuesto/2017') }}">
                           <i class="fa fa-lg fa-fw fa-dollar"></i>
                           Impuestos
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/sobrepeso/2017') }}">
                           <i class="fa fa-lg fa-fw fa-arrow-circle-up"></i>
                           Sobrepeso
                         </a>
                     </li>
-                    <li>
-                        <a href="{{ url('user/registro') }}">
+                    <li >
+                        <a href="#">
                           <i class="fa fa-lg fa-fw fa-building"></i>
-                          Hotel
+                          <span class="menu-item-parent">Hotel</span>
                         </a>
+                        <ul>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2017/1') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 1</span>
+                                </a>
+                            </li>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2017/2') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 2</span>
+                                </a>
+                            </li>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2017/3') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 3</span>
+                                </a>
+                            </li>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2017/4') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 4</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/varios/2017') }}">
                           <i class="fa fa-lg fa-fw fa-life-ring"></i>
                           Varios
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/total/2017') }}">
                           <i class="fa fa-lg fa-fw fa-paragraph"></i>
                           Total
                         </a>
@@ -99,11 +125,37 @@
                           Sobrepeso
                         </a>
                     </li>
-                    <li>
-                        <a href="{{ url('user/registro') }}">
+                    <li >
+                        <a href="#">
                           <i class="fa fa-lg fa-fw fa-building"></i>
-                          Hotel
+                          <span class="menu-item-parent">Hotel</span>
                         </a>
+                        <ul>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2018/1') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 1</span>
+                                </a>
+                            </li>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2018/2') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 2</span>
+                                </a>
+                            </li>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2018/3') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 3</span>
+                                </a>
+                            </li>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2018/4') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 4</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="{{ url('/varios/2018') }}">
@@ -112,7 +164,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/total/2018') }}">
                           <i class="fa fa-lg fa-fw fa-paragraph"></i>
                           Total
                         </a>
@@ -124,37 +176,63 @@
                 <a href="#"><i class="fa fa-lg fa-fw fa-jsfiddle"></i> <span class="menu-item-parent">2019</span></a>
                 <ul>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/transporte/2019') }}">
                           <i class="fa fa-lg fa-fw fa-automobile"></i>
                           Transporte
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/impuesto/2019') }}">
                           <i class="fa fa-lg fa-fw fa-dollar"></i>
                           Impuestos
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/sobrepeso/2019') }}">
                           <i class="fa fa-lg fa-fw fa-arrow-circle-up"></i>
                           Sobrepeso
                         </a>
                     </li>
-                    <li>
-                        <a href="{{ url('user/registro') }}">
+                    <li >
+                        <a href="#">
                           <i class="fa fa-lg fa-fw fa-building"></i>
-                          Hotel
+                          <span class="menu-item-parent">Hotel</span>
                         </a>
+                        <ul>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2019/1') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 1</span>
+                                </a>
+                            </li>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2019/2') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 2</span>
+                                </a>
+                            </li>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2019/3') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 3</span>
+                                </a>
+                            </li>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2019/4') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 4</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/varios/2019') }}">
                           <i class="fa fa-lg fa-fw fa-life-ring"></i>
                           Varios
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/total/2019') }}">
                           <i class="fa fa-lg fa-fw fa-paragraph"></i>
                           Total
                         </a>
@@ -166,37 +244,63 @@
                 <a href="#"><i class="fa fa-lg fa-fw fa-recycle"></i> <span class="menu-item-parent">2020</span></a>
                 <ul>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/transporte/2020') }}">
                           <i class="fa fa-lg fa-fw fa-automobile"></i>
                           Transporte
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/impuesto/2020') }}">
                           <i class="fa fa-lg fa-fw fa-dollar"></i>
                           Impuestos
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/sobrepeso/2020') }}">
                           <i class="fa fa-lg fa-fw fa-arrow-circle-up"></i>
                           Sobrepeso
                         </a>
                     </li>
-                    <li>
-                        <a href="{{ url('user/registro') }}">
+                    <li >
+                        <a href="#">
                           <i class="fa fa-lg fa-fw fa-building"></i>
-                          Hotel
+                          <span class="menu-item-parent">Hotel</span>
                         </a>
+                        <ul>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2020/1') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 1</span>
+                                </a>
+                            </li>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2020/2') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 2</span>
+                                </a>
+                            </li>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2020/3') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 3</span>
+                                </a>
+                            </li>
+                            <li class="open">
+                                <a href="{{ url('/hotel/2020/4') }}">
+                                  <i class="fa fa-lg fa-fw fa-building"></i>
+                                  <span class="menu-item-parent">Hotel 4</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/varios/2020') }}">
                           <i class="fa fa-lg fa-fw fa-life-ring"></i>
                           Varios
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('user/registro') }}">
+                        <a href="{{ url('/total/2020') }}">
                           <i class="fa fa-lg fa-fw fa-paragraph"></i>
                           Total
                         </a>

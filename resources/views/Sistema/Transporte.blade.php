@@ -12,7 +12,7 @@
         <div class="row" >
           <div class="col-md-12">
               <div class="panel panel-default" id="panel-profin">
-                  <div class="panel-heading text-center textoHeader">Registro Transporte</div>
+                  <div class="panel-heading text-center textoHeader">Registro Transporte {{ $year }}</div>
                   <div class="panel-body">
                         @if (count($errors) > 0)
                             <div class="alert alert-danger">
@@ -124,7 +124,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="panel panel-default" id="panel-profin">
-                <div class="panel-heading text-center textoHeader">Detalle Transporte</div>
+                <div class="panel-heading text-center textoHeader">Detalle Transporte {{ $year }}</div>
                 <div class="panel-body">
                   <form style="padding: 10px;">
                     <div class="radio-inline">
